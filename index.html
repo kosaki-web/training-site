@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>職業訓練学校の制作課題で作った仮想サイトのトップページ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@100..900&family=Train+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="top">
+    <header>
+        <h1 class="logo">
+            <a href="#">
+                <img src="img/header/headerlogo.webp" alt="F.K. CODING & DESIGN">
+            </a>
+        </h1>
+
+        <nav class="header-nav" aria-label="メインナビゲーション">
+            <h2 class="sr-only">メインメニュー</h2>
+            <button class="login-btn">ログイン</button>
+
+            <button class="menu-trigger" id="menu-open" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <div class="menu-overlay" id="menu-overlay" aria-hidden="true">
+                <button class="menu-close" id="menu-close" aria-label="メニューを閉じる">&times;</button>
+
+                <ul class="menu-list">
+                    <li><a href="#">トップ</a></li>
+                    <li><a href="#">生徒の皆さんの作品一覧</a></li>
+                    <li><a href="#about">What is F.K. CODING & DESIGN？</a></li>
+                    <li><a href="#reasons">F.K. CODING & DESIGNが<br>選ばれる6つの理由</a></li>
+                    <li><a href="#testimonials">お客様の声</a></li>
+                    <li><a href="#faq">Q&A(よくあるご質問)</a></li>
+                    <li><a href="#">教室の住所、地図</a></li>
+                    <li><a href="#">F.K. CODING & DESIGNの系列サイト</a></li>
+                    <li><a href="#">お問い合わせフォーム</a></li>
+                    <li class="menu-cta">
+                        <a href="#" class="cta-button">
+                            無料体験レッスンの申込
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main-content">
+        <section id="hero">
+            <div class="main-title">
+                <h2>F.K.<br>CODING & DESIGN</h2>
+            </div>
+
+            <div class="hero-image-box">
+                <picture>
+                    <source srcset="img/hero/top_image.webp" type="image/webp">
+                    <img class="hero-image" src="img/hero/top_image.jpeg" alt="ノートパソコンでWebデザインを学ぶ子供の様子">
+                </picture>
+            </div>
+
+            <div class="hero-contents">
+                <div class="circle">
+                    <p>プロ仕様のMac<br>無料レンタル中！</p>
+                </div>
+                <div class="circle">
+                    <p>好きを才能に！<br>一生モノの<br>デザインスキル</p>
+                </div>
+                <div class="circle">
+                    <p>無料体験レッスン<br>申込受付中</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="topic-title">
+                <h2>What is F.K.<br>CODING & DESIGN？</h2>
+            </div>
+
+            <div class="about-backgroundimage">
+                <picture>
+                    <source srcset="img/back_image/topic1_background_image.webp" type="image/webp">
+                    <img class="about-image" src="img/back_image/topic1_background_image.jpeg" alt="サイバーな背景"
+                        loading="lazy">
+                </picture>
+            </div>
+
+            <div class="about-contents">
+                <article>
+                    <h3>新たな市場を作り出す試み</h3>
+                    <div class="about-icon" aria-hidden="true">
+                        <div class="about-icon1-box">
+                            <picture>
+                                <source srcset="img/icon_human/design_boy.webp" type="image/webp">
+                                <img class="about-icon1" src="img/icon_human/design_boy.jpeg" alt="お絵描き中の男子"
+                                    loading="lazy">
+                                <p class="about-icon-title">デザイン</p>
+                            </picture>
+                        </div>
+
+                        <div class="about-icon3-box1">
+                            <img class="about-icon3" src="img/icon/blackcross.png" alt="×のマーク" loading="lazy">
+                        </div>
+
+                        <div class="about-icon2-box">
+                            <picture>
+                                <source srcset="img/icon_human/digital_design_boy.webp" type="image/webp">
+                                <img class="about-icon2" src="img/icon_human/digital_design_boy.jpeg" alt="iPadと男子"
+                                    loading="lazy">
+                            </picture>
+                            <p class="about-icon-title">デジタルデザイン</p>
+                        </div>
+                    </div>
+                    <p>　私たちが提案する「子ども向けWebデザイン教室」は、これまでほとんど前例のない、新たな市場を切り拓く挑戦です。プログラミングや英会話、スポーツなど「習い事の定番」だけではカバーしきれない、<span>デザイン×デジタルスキルという未開拓領域の可能性に着目しました。</span>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>VUCA時代を生き抜く力を育む</h3>
+
+                    <div class="container">
+                        <div class="container-box1"><img class="container-image1" src="img/icon/icon_volatility.png"
+                                alt="変動性のアイコン" loading="lazy">変動性 <br>(Volatility)
+                        </div>
+                        <div class="container-box2"><img class="container-image2" src="img/icon/icon_uncertainty.png"
+                                alt="不確実性のアイコン" loading="lazy">不確実性
+                            (Uncertainty)</div>
+                        <div class="container-box3"><img class="about-icon3" src="img/icon/blackcross.png" alt=""
+                                loading="lazy"></div>
+                        <div class="container-box4"><img class="container-image3" src="img/icon/icon_complexity.png"
+                                alt="複雑性のアイコン" loading="lazy">複雑性 (Complexity)
+                        </div>
+                        <div class="container-box5"><img class="container-image4" src="img/icon/icon_ambiguity.png"
+                                alt="曖昧性のアイコン" loading="lazy">曖昧性 (Ambiguity)</div>
+                    </div>
+
+                    <p class="about-icon-title">VUCAの要素</p>
+
+                    <p>　変化の激しいVUCA時代には、一つの世界観やスキルだけにとらわれていては柔軟に対応できません。<span>デザインは、さまざまな職業・活動の中で活かせる「汎用性の高いスキル」です。</span>
+                    </p>
+
+                    <ul class="about-list">
+                        <li>・インフルエンサーやYouTuberといった新しい職業にも、効果的なデザイン力は必須。</li>
+                        <li>・「手に職系」スキルとして、将来フリーランスや副業の道を広げる。</li>
+                        <li>・AIが台頭しても、人間にしかできない「創造」「表現」の価値は失われない。</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>デジタル×表現力を<br>重視する時代へ</h3>
+                    <div class="about-icon">
+                        <div class="about-icon1-box">
+                            <picture>
+                                <source srcset="img/icon_human/digital_boy.webp" type="image/webp">
+                                <img class="about-icon1" src="img/icon_human/digital_boy.jpeg" alt="iPadと男子"
+                                    loading="lazy">
+                            </picture>
+                            <p class="about-icon-title">デジタル</p>
+                        </div>
+
+                        <div class="about-icon3-box3">
+                            <img class="about-icon3" src="img/icon/blackcross.png" alt="" loading="lazy">
+                        </div>
+
+                        <div class="about-icon2-box">
+                            <picture>
+                                <source srcset="img/icon_human/hyougenn_girl.webp" type="image/webp">
+                                <img class="about-icon2" src="img/icon_human/hyougenn_girl.jpeg" alt="手上げる女子"
+                                    loading="lazy">
+                            </picture>
+                            <p class="about-icon-title">表現力</p>
+                        </div>
+                    </div>
+                    <p>　テクノロジーが進化し、デジタルクリエイティブの需要は今後ますます高まると予想されます。<span>子どものうちからWebデザインを学べるスクールは、現在の市場では見つからない状況です。</span>
+                    </p>
+
+                    <ul class="about-list">
+                        <li>・早期から触れた子どもたちは、「デジタル表現力」を武器に、<span>将来の可能性を大きく拡げられる。</span></li>
+                        <li>・将来的に保護者が「デジタルリテラシー」「表現力」の両方を重視し始めれば、市場全体が大きく成長する可能性を秘めています。</li>
+                    </ul>
+                    <p>　本事業は、そんな時代のニーズに応える教育サービスです。</p>
+                </article>
+            </div>
+        </section>
+
+        <h2 class="banner">
+            <a href="#">
+                <picture>
+                    <source srcset="img/banner/banner.webp" type="image/webp">
+                    <img class="banner-image" src="img/banner/banner.jpg" alt="F.K. CODING & DESIGNのバナー" loading="lazy">
+                </picture>
+            </a>
+        </h2>
+
+        <section id="reasons">
+            <div class="topic-title">
+                <h2>F.K. CODING & DESIGNが<br>選ばれる6つの理由</h2>
+            </div>
+
+            <div class="reasons-backgroundimage">
+                <picture>
+                    <source srcset="img/back_image/topic2_background_image.webp" type="image/webp">
+                    <img class="reasons-image" src="img/back_image/topic2_background_image.jpeg" alt="reasonsの背景"
+                        loading="lazy">
+                </picture>
+            </div>
+
+            <div class="reasons-contents">
+                <ol class="reasons-list">
+                    <li>
+                        <div class="reason-card">
+                            <img src="img/icon/icon_reason1.png" alt="" aria-hidden="true" loading="lazy">
+
+                            <h3><span>遊びの延長で自立したIT技術を育める</span>充実したステップアップ形式のカリキュラムがあります！</h3>
+                            <a href="#" class="more-link">詳しく見る</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="reason-card">
+                            <img src="img/icon/icon_reason2.png" alt="" aria-hidden="true" loading="lazy">
+
+                            <h3>単なる操作だけでなく、相手に伝える本質的な思考力を伝授。<span>AIには代替できない人間ならではの感性を磨きます。</span></h3>
+                            <a href="#" class="more-link">詳しく見る</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="reason-card">
+                            <img src="img/icon/icon_reason3.png" alt="" aria-hidden="true" loading="lazy">
+
+                            <h3>忙しい保護者に代わり、現役クリエイターが伴走。<span>お子様が自分自身で課題を解決できる「自走力」を育てます。</span></h3>
+                            <a href="#" class="more-link">詳しく見る</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="reason-card">
+                            <img src="img/icon/icon_reason4.png" alt="" aria-hidden="true" loading="lazy">
+
+                            <h3>習い事特有の「見えないコスト」を徹底排除。<span>入会後の追加費用は一切ありません！</span>納得の継続プランで安心して長く学び続けられます。</h3>
+                            <a href="#" class="more-link">詳しく見る</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="reason-card">
+                            <img src="img/icon/icon_reason5.png" alt="" aria-hidden="true" loading="lazy">
+
+                            <h3>送迎の悩みから解放！<span>その日の都合や体調に合わせて受講スタイルを選択でき</span>、忙しいご家庭でも継続可能です。</h3>
+                            <a href="#" class="more-link">詳しく見る</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="reason-card">
+                            <img src="img/icon/icon_reason6.png" alt="" aria-hidden="true" loading="lazy">
+
+                            <h3>「今日、何したの？」の不安を解消。<span>制作物やレッスンの様子をご両親と共有</span>し、お子様の確かな成長を目にしていただけます。</h3>
+                            <a href="#" class="more-link">詳しく見る</a>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="topic-title">
+                <h2>お客様の声</h2>
+            </div>
+
+            <div class="testimonials-backgroundimage">
+                <picture>
+                    <source srcset="img/back_image/topic3_background_image.webp" type="image/webp">
+                    <img class="testimonials-image" src="img/back_image/topic3_background_image.jpeg"
+                        alt="testimonialsの背景" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="testimonials-contents carousel-container">
+
+                <button class="carousel-prev" id="prevBtn" aria-label="前の声へ">◀</button>
+
+                <div class="figures-viewport">
+                    <div class="figures">
+                        <figure>
+                            <figcaption>
+                                <h3>「消費する側」から「創る側」へ<br>激変したA君（小5）</h3>
+                            </figcaption>
+                            <div class="testimonials-icon">
+                                <picture>
+                                    <source srcset="img/icon_human/a_boy.webp" type="image/webp">
+                                    <img src="img/icon_human/a_boy.jpeg" alt="A君の顔写真" loading="lazy">
+                                </picture>
+                            </div>
+
+                            <p><strong>【悩み】</strong>ゲームや動画を「消費」するだけの毎日に不安を感じ、「絵が好き」という個性を活かせる場を探していました。</p>
+                            <p><strong>【変化】</strong>自作サイトがスマホで動く感動を機に、現在はLINEスタンプ販売にも挑戦。「どうすればたくさんのお客さんに届くのか」というマーケティング視点も芽生えました。
+                            </p>
+                            <p><strong>【感想】</strong> 遊びが「社会とつながる自信」に変化しました。Macを使いこなす姿は立派なクリエイターです。</p>
+                        </figure>
+
+                        <figure>
+                            <figcaption>
+                                <h3>引っ込み思案な自分に「武器」を<br>見つけたMちゃん（中2）</h3>
+                            </figcaption>
+
+                            <div class="testimonials-icon">
+                                <picture>
+                                    <source srcset="img/icon_human/m_girl.webp" type="image/webp">
+                                    <img src="img/icon_human/m_girl.jpeg" alt="Mちゃんの画像" loading="lazy">
+                                </picture>
+                            </div>
+
+                            <p><strong>【悩み】</strong>発表が苦手で、「誰にも負けない自信」を持たせてあげたい。共働きのため、オンラインでも送迎の手間なく本格的に学べる場を求めていました。
+                            </p>
+                            <p><strong>【変化】</strong>言葉より「形」で表現できるデザインが性格に合致。家族の誕生日にサプライズでお祝いサイトを制作し、「自分の技術で人を喜ばせる手応え」を掴みました。
+                            </p>
+                            <p><strong>【感想】</strong>自由な振替制度で学業とも両立可能できています。レッスンの発表動画が届くので、離れていても成長を実感できます。</p>
+                        </figure>
+
+                        <figure>
+                            <figcaption>
+                                <h3>AI時代を見据え「自活の力」を<br>意識するK君（高1）</h3>
+                            </figcaption>
+
+                            <div class="testimonials-icon">
+                                <picture>
+                                    <source srcset="img/icon_human/k_man.webp" type="image/webp">
+                                    <img src="img/icon_human/k_man.jpeg" alt="K君の画像" loading="lazy">
+                                </picture>
+                            </div>
+
+                            <p><strong>【悩み】</strong>将来、AIに仕事が奪われるというニュースを見て、どんなスキルを持たせるべきか悩んでいました。単なるコーディングだけでなく、デザイン思考や課題解決力を身につけてほしいと考えていました。
+                            </p>
+                            <p><strong>【変化】</strong>自作サイトがスマホで動く感動を機に、現在はLINEスタンプ販売にも挑戦。「どうすれば売れるか」というマーケティング視点も芽生えました。
+                            </p>
+                            <p><strong>【感想】</strong>中高生のうちに『本物の仕事』に触れられたのは一生の財産です。親が教えられない『本物のプロの視点』を学べています。</p>
+                        </figure>
+                    </div>
+                </div>
+
+                <button class="carousel-next" id="nextBtn">▶</button>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="topic-title">
+                <h2>Q&A(よくあるご質問)</h2>
+            </div>
+
+            <div class="faq-backgroundimage">
+                <picture>
+                    <source srcset="img/back_image/topic4_background_image.webp" type="image/webp">
+                    <img class="faq-image" src="img/back_image/topic4_background_image.jpeg" alt="Q&Aの背景"
+                        loading="lazy">
+                </picture>
+            </div>
+
+            <div class="faq-contents">
+                <details>
+                    <summary>
+                        <h3>Q. パソコンを触ったことがない初心者ですがついていけますか？</h3>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>A.
+                            もちろんです。電源の入れ方やマウス操作、タイピングといった基本から、プロ仕様のMacを使って現役のクリエイター講師がマンツーマン感覚で丁寧に指導します。1つずつステップを踏んでいくので、いつの間にかプロの道具を使いこなせるようになります。
+                        </p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                        <h3>Q. <span>必要な機材（パソコンやソフト）は購入しなければなりませんか？</span></h3>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            A.<span>教室内ではプロ仕様のMacの無料レンタルが可能となっています。</span>また、自宅学習用のレンタルプランや、導入ソフトの学生割引適用などのサポートも充実しています。初期費用を抑えて、最高峰の制作環境でスタートすることが可能です。
+                        </p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                        <h3>Q. うちの子は飽き性でこれまで習い事が長続きしませんでした。大丈夫でしょうか？</h3>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            A. はい、ご安心ください。私たちは「教える」のではなく、お子様の「創りたい」に火をつけるアプローチを重視しています。
+                            一般的なスクールのような「受け身の授業」ではなく、モンテッソーリ教育に基づき、お子様自身が選んだ「好きなもの（推しの紹介サイト、自分の描いた絵など）」を教材にします。
+                            「自分の作品が形になり、誰かに褒められる」という成功体験が短期間で得られるため、自発的な集中力が驚くほど持続します。
+                        </p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                        <h3>Q. プログラミング教室とWebデザインアカデミーは何が違うのですか？</h3>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            A. 「ロジック（論理）」だけでなく、「表現力」と「社会性」を同時に育てる点が大きな違いです。
+                            プログラミングは「正しく動かすこと」がゴールになりがちですが、Webデザインは「相手にどう伝えるか、どう喜んでもらうか」という視点が不可欠です。
+                            名刺やLINEスタンプ、Webサイトなど、目に見える「成果物」が社会とつながる実感を得やすいため、将来どのような職業に就いても役立つ「課題解決力」が身につきます。
+                        </p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                        <h3>Q. デジタル機器をただ消費するだけでなく使いこなせるようになりますか？</h3>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            A. 「消費する側」から「価値を創る側」へ、視点を180度転換させます。
+                            普段見ているYouTubeのサムネイルやWebサイトが「どう作られているのか？」という裏側の仕組みを知ることで、お子様のデジタルへの接し方は劇的に変わります。
+                            プロ仕様のMacを使い、デザインの原則（色の心理効果やレイアウト）を学ぶことで、デジタルを「ただの遊び道具」ではなく「自分の武器」として認識するようになります。
+                        </p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                        <h3>Q. 親がデザインやITに疎いのですが自宅でのサポートは必要ですか？</h3>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            A. サポートはすべてプロの講師にお任せください。ご家庭では「驚き、褒めること」だけで十分です。
+                            現役のクリエイター講師が、お子様のレベルに合わせてマンツーマンに近い形で伴走します。レッスンの様子や成長の記録は、動画やチャットで詳しく共有いたします。
+                            親御様が技術的なことを教える必要はありません。完成した作品をURLで共有した際に、ぜひ「すごいね！」と一緒に喜んであげてください。その承認が、お子様の最大の原動力になります。
+                        </p>
+                    </div>
+                </details>
+                <details>
+                    <summary>
+                        <h3>Q. <span>塾や他の習い事や部活で忙しいのですがスケジュール調整は可能ですか？</span></h3>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            A. <span>「当日振替自由」のシステムを採用しており、忙しいお子様でも無理なく継続できます。</span>
+                            急な体調不良や部活の延長、試験勉強期間など、ライフスタイルに合わせて柔軟にスケジュールを変更いただけます。オンライン受講も選択可能なため、送迎の手間を省きながら、全国どこからでも本格的なクリエイティブ教育を受けられます。
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <section class="fixed-footer-actions" id="fixed-actions">
+        <div class="ctabuttonbackgraoundnavy-contents">
+            <div id="cta">
+                <a href="#">
+                    <p><strong>無料体験レッスンの申込</strong></p>
+                </a>
+            </div>
+            <div class="top-button">
+                <a href="#top">
+                    <span class="arrow">▲</span>
+                    <span class="text">TOP</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <address>
+            <p>お問い合わせ：<a href="#">0120-XXXX-XXXX<br>（受付時間 8:00〜25:00）</a></p>
+            <p>教室：<a href="#">住所・地図</a></p>
+            <p>各種SNS：<a href="#"><img class="footer-image1" src="img/icon/icon_youtube.png" alt="youtubeのアイコン"
+                        loading="lazy"></a>
+                <a href="#">
+                    <img class="footer-image2" src="img/icon/icon_instagram.png" alt="instagramのアイコン"
+                        loading="lazy"></a>
+                <a href="#"><img class="footer-image3" src="img/icon/icon_facebook.png" alt="facebookのアイコン"
+                        loading="lazy"></a>
+            </p>
+        </address>
+
+        <div>
+            <a href="#">会社情報</a> | <a href="#">利用規約</a> | <a href="#">プライバシーポリシー</a>
+        </div>
+
+        <p><small>&copy;2026 XXXXXX XXXXXX inc</small></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
