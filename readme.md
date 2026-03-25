@@ -6,7 +6,11 @@
 
 ## 🌐 デモURL
 
-(ここにGitHub PagesなどのURLを貼ってください)
+[デモサイトを見る](https://kosaki-web.github.io/training-site/)
+
+## 📂 リポジトリ
+
+[リポジトリを見る](https://github.com/kosaki-web/training-site.git)
 
 ## 👤 ターゲット層
 
