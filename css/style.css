@@ -157,7 +157,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     /* 明示的に画面幅を指定 */
     height: 100vh;
     /* 明示的に画面高さを指定 */
@@ -443,12 +443,15 @@ header nav button::before {
 .main-content {
     padding-bottom: 100px;
     /* ボタンの高さ分 */
+    max-width: 393px;
+    width: 100%;
 }
 
 #hero {
     display: grid;
     grid-template-areas: "stack";
     max-width: 393px;
+    width: auto;
     margin: 0 auto 40px;
     place-items: center;
     /* 子要素を上下左右中央に配置 */
@@ -831,12 +834,14 @@ article li span {
 
 /* バナー */
 .banner {
-    width: 393px;
+    max-width: 393px;
+    width: 100%;
     margin: 0 auto 40px;
 }
 
 .banner-image {
-    width: 393px;
+    max-width: 393px;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
