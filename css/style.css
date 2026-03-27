@@ -614,14 +614,17 @@ header nav button::before {
 /* Aboutセクション */
 #about {
     max-width: 393px;
+    width: auto;
     margin: 0 auto 40px;
     display: grid;
-    grid-template-areas: "stack";
-    /* 重なりを明示的に定義 */
-    width: 100%;
     justify-content: center;
-
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../img/back_image/topic1_background_image.webp);
+    background-position: 60% 50%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
+
 
 #about>* {
     /* 全ての子要素を同じエリアに割り当てる */
@@ -637,8 +640,7 @@ header nav button::before {
     z-index: 1;
     padding: 100px 0 20px 0;
     /* 背景とのバランスをとるための余白 */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
+
 }
 
 article p,
@@ -765,17 +767,6 @@ article li span {
     height: 39px;
 }
 
-.about-image {
-    max-width: 393px;
-    height: 100%;
-    object-fit: cover;
-    /* 縦長になっても画像が歪まないようにカバー */
-    opacity: 0.2;
-    display: block;
-    border-radius: 20px;
-    z-index: -1
-}
-
 
 @media (min-width:769px) {
     #about {
@@ -833,20 +824,6 @@ article li span {
     .about-icon3 {
         width: 39px;
         height: 39px;
-    }
-
-    .about-backgroundimage {
-        height: fit-content;
-    }
-
-    .about-image {
-        width: 600px;
-        max-width: 600px;
-        /* 固定値(1900px)を削除し、親の高さに100%追従させる */
-        opacity: 0.2;
-        border-radius: 20px;
-        z-index: -1;
-        height: 2285.78px;
     }
 }
 
