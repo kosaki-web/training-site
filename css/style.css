@@ -550,7 +550,7 @@ header nav button::before {
 
 }
 
-@media (min-width:769px) {
+@media (min-width:426px) {
     .main-content {
         background: url(../img/back_image/pc_back_image7.webp) no-repeat fixed center / 100%;
         background-position-y: 0, 64px;
@@ -771,7 +771,7 @@ article li span {
 @media (min-width:769px) {
     #about {
         background-color: white;
-        border-radius: 20px;
+
     }
 }
 
@@ -779,11 +779,7 @@ article li span {
 @media (min-width:1025px) {
     #about {
         max-width: 600px;
-        border-radius: 20px;
-    }
-
-    .about-contents {
-        height: fit-content;
+        width: auto;
     }
 
     article p,
@@ -863,11 +859,15 @@ article li span {
 /* Reasonsセクション */
 #reasons {
     max-width: 393px;
+    width: auto;
     margin: 0 auto 40px;
     display: grid;
-    grid-template-areas: "stack";
-    /* 重なりを定義 */
     justify-content: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../img/back_image/topic2_background_image.webp);
+    background-position: 60% 50%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 #reasons>* {
@@ -883,7 +883,6 @@ article li span {
     /* 重なり順を上にする */
     padding: 100px 0 30px 0;
     /* 背景との余白を確保 */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
 }
 
@@ -973,19 +972,6 @@ article li span {
     height: 100px;
 }
 
-.reasons-image {
-    width: 100%;
-    /* 最大幅は維持 */
-    height: 100%;
-    /* 固定値を削除し、親の高さに100%合わせる */
-    object-fit: cover;
-    /* 縦長になっても画像が歪まないように調整 */
-    opacity: 0.2;
-    display: block;
-    border-radius: 20px;
-    z-index: -1
-}
-
 @media (min-width:769px) {
     #reasons {
         background-color: white;
@@ -996,7 +982,7 @@ article li span {
 @media (min-width:1025px) {
     #reasons {
         max-width: 600px;
-        width: 600px;
+        width: auto;
     }
 
     .reasons-contents {
@@ -1008,7 +994,6 @@ article li span {
         /* 重なり順を上にする */
         padding: 100px 0 30px 0;
         /* 背景との余白を確保 */
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
         border-radius: 20px;
     }
 
@@ -1041,19 +1026,6 @@ article li span {
         width: 150px;
         height: 150px;
     }
-
-    .reasons-image {
-        width: 100%;
-        /* 最大幅は維持 */
-        height: 100%;
-        /* 固定値を削除し、親の高さに100%合わせる */
-        object-fit: cover;
-        /* 縦長になっても画像が歪まないように調整 */
-        opacity: 0.2;
-        display: block;
-        border-radius: 20px;
-        z-index: -1
-    }
 }
 
 
@@ -1071,17 +1043,24 @@ article li span {
 /* Testimonialsセクション */
 #testimonials {
     max-width: 393px;
+    width: auto;
     margin: 0 auto 40px;
     display: grid;
     /* エリアを重ねる設定 */
-    grid-template-areas: "stack";
     justify-content: center;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../img/back_image/topic3_background_image.webp);
+    background-position: 60% 50%;
+    overflow: hidden;
 }
 
 #testimonials>* {
     grid-area: stack;
+}
+
+.testimonials-contents {
+    padding: 50px 0 30px;
 }
 
 .figures-viewport {
@@ -1196,10 +1175,9 @@ article li span {
     padding: 0;
     z-index: 10;
     font-size: 2.1em;
-
     color: #a19e9e;
     /* 文字の色（少し暗め） */
-    background-color: #D8E0FB;
+    background-color: none;
     /* 背景色 */
 
     /* 上に暗い影、下に明るいハイライトを1pxずつ入れる */
@@ -1260,6 +1238,7 @@ article li span {
 /* Q&Aセクション */
 #faq {
     max-width: 393px;
+    width: auto;
     margin: 0 auto 40px;
     display: grid;
     grid-template-areas: "stack";
