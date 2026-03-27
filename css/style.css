@@ -155,20 +155,13 @@ header {
 /* 全画面メニューの背景コンテナ */
 .menu-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* 明示的に画面幅を指定 */
-    height: 100vh;
-    /* 明示的に画面高さを指定 */
+    inset: 0;
     background-color: #F8D49D;
     z-index: 9999;
-    /* 他の要素に負けないように極端に大きく */
+
     transform: translateX(100%);
-    /* 1. 最初は右側の画面外に配置 */
     transition: transform 0.4s ease-out;
-    /* 2. 動くスピードと滑らかさ */
-    /* 中央配置の設定 */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,15 +436,12 @@ header nav button::before {
 .main-content {
     padding-bottom: 100px;
     /* ボタンの高さ分 */
-    max-width: 393px;
-    width: 100%;
 }
 
 #hero {
     display: grid;
     grid-template-areas: "stack";
     max-width: 393px;
-    width: auto;
     margin: 0 auto 40px;
     place-items: center;
     /* 子要素を上下左右中央に配置 */
@@ -1436,12 +1426,14 @@ article li span {
 /* ボタンを包むコンテナを固定 */
 .fixed-footer-actions {
     position: fixed;
-    margin-bottom: 40px;
+    bottom: 40px;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translateX(-50%) translateY(100%);
     width: 100%;
     max-width: 393px;
     z-index: 100;
+    opacity: 0;
+    visibility: hidden;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
@@ -1464,8 +1456,7 @@ article li span {
 .fixed-footer-actions.show {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, 0);
-    ;
+    transform: translateX(-50%) translateY(0);
 }
 
 /* 子要素でクリックを有効に戻す */
@@ -1488,6 +1479,7 @@ article li span {
     position: relative;
     gap: 15px;
     padding: 0 10px;
+    margin-bottom: 40px;
 }
 
 
