@@ -835,13 +835,23 @@ article li span {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width:1025px) {
+@media (min-width:769px) {
     .banner {
-        width: 600px;
+        max-width: 400px;
     }
 
     .banner-image {
-        width: 600px;
+        max-width: 400px;
+    }
+}
+
+@media (min-width:1025px) {
+    .banner {
+        max-width: 600px;
+    }
+
+    .banner-image {
+        max-width: 600px;
     }
 }
 
