@@ -158,10 +158,9 @@ header {
     inset: 0;
     background-color: #F8D49D;
     z-index: 9999;
-
     transform: translateX(100%);
     transition: transform 0.4s ease-out;
-
+    pointer-events: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +169,7 @@ header {
 /* 表示状態 */
 .menu-overlay.active {
     transform: translateX(0);
-    /* 3. 画面内の元の位置（左端0）に戻る */
+    pointer-events: auto;
 }
 
 /* 閉じるボタン (×) - 最前面に配置 */
@@ -185,7 +184,7 @@ header {
     /* 黒色で確実に表示 */
     cursor: pointer;
     line-height: 1;
-    z-index: 10000;
+    z-index: 20000;
     /* リストより上に配置 */
 }
 
