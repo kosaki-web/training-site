@@ -287,6 +287,12 @@ header nav button::before {
     display: none;
 }
 
+@media (max-width:320px) {
+    .logo img {
+        max-height: 50px;
+    }
+}
+
 
 
 /* ヘッダー　PC版 */
@@ -1518,7 +1524,7 @@ article li span {
     .fixed-footer-actions.at-bottom {
         position: absolute;
         /* footerの直前に配置されるため、bottom: 100% もしくは footerの高さ分調整 */
-        bottom: 330px;
+        bottom: 300px;
         top: auto;
     }
 }
