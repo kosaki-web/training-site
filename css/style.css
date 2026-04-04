@@ -1518,7 +1518,7 @@ article li span {
     .fixed-footer-actions.at-bottom {
         position: absolute;
         /* footerの直前に配置されるため、bottom: 100% もしくは footerの高さ分調整 */
-        bottom: 300px;
+        bottom: 330px;
         top: auto;
     }
 }
