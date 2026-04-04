@@ -1625,6 +1625,7 @@ article li span {
     /* 横幅を広げる */
     max-width: 300px;
     /* 画像に近いサイズ感に調整 */
+    font-size: 1.5rem;
 }
 
 #cta p {
