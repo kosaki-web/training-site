@@ -1179,7 +1179,7 @@ article li span {
 
 #testimonials figcaption {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #f06292;
     margin-bottom: 1em;
 }
@@ -1269,10 +1269,6 @@ article li span {
     .carousel-container {
         max-width: 320px;
         width: 100%;
-    }
-
-    #testimonials figcaption br {
-        display: none;
     }
 }
 
