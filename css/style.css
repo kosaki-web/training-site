@@ -548,6 +548,18 @@ header nav button::before {
 
 }
 
+@media (max-width:320px) {
+    #hero .circle {
+        width: 130px;
+        /* スマホ向けに少しサイズ調整 */
+        height: 130px;
+    }
+
+    #hero p {
+        font-size: 0.8em;
+    }
+}
+
 @media (min-width:426px) {
     .main-content {
         background: url(../img/back_image/pc_back_image7.webp) no-repeat fixed center / 100%;
