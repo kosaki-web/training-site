@@ -1256,6 +1256,17 @@ article li span {
     /* 右下の明るい光（縁の反射） */
 }
 
+@media (max-width:320px) {
+    .carousel-container {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    #testimonials figcaption br {
+        display: none;
+    }
+}
+
 @media (min-width:769px) {
     #testimonials {
         background-color: white;
