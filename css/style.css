@@ -291,6 +291,10 @@ header nav button::before {
     .logo img {
         max-height: 50px;
     }
+
+    .menu-list li a {
+        font-size: 1.0rem;
+    }
 }
 
 
