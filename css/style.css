@@ -979,6 +979,11 @@ article li span {
 #reasons ol li a {
     background: linear-gradient(to right, #ffab40, #ff8a65);
     /* グラデーションボタン */
+    box-shadow:
+        0 2px 0 #bdb9b9,
+        /* 下の影（厚み） */
+        0 5px 5px rgba(0, 0, 0, 0.2);
+    /* 全体の影 */
     color: white;
     border: none;
     border-radius: 30px;
@@ -1527,7 +1532,6 @@ article li span {
     /* 固定を解除 */
     bottom: 0;
     /* 親要素（または特定の計算位置）で止める */
-    /* JSで制御しやすくするため、基本は position の切り替えで行います */
 }
 
 .fixed-footer-actions.at-bottom {
@@ -1606,6 +1610,11 @@ article li span {
 #cta {
     background: linear-gradient(135deg, #ffab40, #ff8a65);
     /* 元画像のグラデーション */
+    box-shadow:
+        0 2px 0 #bdb9b9,
+        /* 下の影（厚み） */
+        0 5px 5px rgba(0, 0, 0, 0.2);
+    /* 全体の影 */
     padding: 10px;
     text-align: center;
     align-items: center;
@@ -1616,7 +1625,6 @@ article li span {
     /* 横幅を広げる */
     max-width: 300px;
     /* 画像に近いサイズ感に調整 */
-    font-size: 1.5em;
 }
 
 #cta p {
@@ -1667,6 +1675,16 @@ article li span {
     display: block;
 }
 
+@media (max-width:320px) {
+    #cta {
+        font-size: 1.4em;
+    }
+
+    #cta p strong::after {
+        display: none;
+    }
+}
+
 @media (min-width:1025px) {
     #cta {
         max-width: 600px;
@@ -1696,7 +1714,11 @@ article li span {
     align-items: center;
     text-decoration: none;
     position: relative;
-
+    box-shadow:
+        0 2px 0 #bdb9b9,
+        /* 下の影（厚み） */
+        0 5px 5px rgba(0, 0, 0, 0.2);
+    /* 全体の影 */
 }
 
 .top-button .arrow {
